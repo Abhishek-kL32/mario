@@ -1,0 +1,20 @@
+packer {
+  required_plugins {
+    amazon = {
+      source  = "github.com/hashicorp/amazon"
+      version = "~> 1"
+    }
+  }
+}
+
+data "amazon-ami" "zomato" {
+     filters  = {
+       virtualization-type = "hvm"
+       root-device-type    = "ebs"
+       name   =  "zomato*"
+  }
+    owners = ["884464813654"]
+    most_recent = true
+    region = "ap-south-1"
+}
+

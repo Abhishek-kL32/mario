@@ -1,0 +1,3 @@
+output "Lattest_ami_id_was" {
+   value = data.amazon-ami.zomato
+  }

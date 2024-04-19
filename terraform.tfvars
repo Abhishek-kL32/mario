@@ -1,0 +1,6 @@
+instance_type = "t2.micro"
+project_name  = "mario"
+hosted_zone_name = "abhishekkrishna.site"
+hostname      = "mario"
+region        = "ap-south-1"
+project_env   = "prod"
